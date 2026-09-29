@@ -35,7 +35,7 @@ pair_style      lj/cut 4.0 # Use a Lennard-Jones pair potential with a cutoff di
 pair_coeff      1    1    1.0 1.0 # Set Lennard-Jones parameters for atom type 1 (epsilon = 1.0 sigma = 1.0)
 
 fix             mynve    all      nve # Integrate the equations of motion
-timestep        0.005 # Set the integration timestep to 0.005 in LJ reduced time units
+timestep        0.0025 # Set the integration timestep
 
 thermo          100 # Print thermodynamic information in log
 thermo_style    custom step temp etotal ke pe density # Choose what information is printed
