@@ -37,7 +37,7 @@ pair_coeff      1    1    1.0 1.0 # Set Lennard-Jones parameters for atom type 1
 fix             mynve    all      nve # Integrate the equations of motion
 timestep        0.005 # Set the integration timestep to 0.005 in LJ reduced time units
 
-thermo          10 # Print thermodynamic information in log
+thermo          100 # Print thermodynamic information in log
 thermo_style    custom step temp etotal ke pe density # Choose what information is printed
 
 dump            viz      all      image 500 myimage-*.ppm type type size 800 800 zoom 1.452 shiny 0.5 fsaa yes view 0 0 box yes 0.005 axes no 0.0 0.0 center s 0.483725 0.510373 0.510373
