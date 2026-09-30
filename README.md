@@ -21,6 +21,7 @@ See [this page](https://lammps-gui.lammps.org/installation.html)
 
 ```bash
 # Simple NVE argon simulation
+
 units           lj # Use Lennard-Jones reduced units
 dimension       3 # Perform the simulation in 3 spatial dimensions
 atom_style      atomic # Atoms are treated as point particles without bonds or molecular topology
