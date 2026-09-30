@@ -63,7 +63,8 @@ create_box      2 simbox # Create a simulation box containing two atom type
 create_atoms    1 region simbox # Create atoms along the predefined lattice
 lattice         none 1
 
-mass            *    1.0 # Assign a mass to all atom
+mass            1    1.0 # Assign a mass to type one
+mass            2    1.7 # Assign a mass to type one
 pair_style      lj/cut 4.0 # Use a Lennard-Jones pair potential with a cutoff distance of 4.0
 pair_coeff      1    1    1.0 1.0 # Set Lennard-Jones parameters for atom type 1
 pair_coeff      2    2    1.0 1.2 # Set Lennard-Jones parameters for atom type 2 (atoms of type are slightly bigger)
