@@ -83,4 +83,9 @@ dump            viz      all      image 100 myimage-*.ppm type type size 800 800
 dump_modify     viz pad 9 boxcolor white backcolor black adiam 1 1 adiam 2 1.2 acolor 1 cyan acolor 2 purple
 
 run             1000 # System equilibration
+
+# variable        stress equal -pxy
+# variable        strain equal xy/ly
+# fix             myav1 all ave/time 100 1 100 v_strain v_stress file stress_strain_0.05.dat
+
 ```
