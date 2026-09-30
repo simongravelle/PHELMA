@@ -2,7 +2,7 @@
 
 ## Download LAMMPS-GUI
 
-Alternatively, LAMMPS-GUI can also be downloaded from these links:
+LAMMPS-GUI can also be downloaded from these links:
 
 - [LAMMPS-GUI (.exe)](https://github.com/akohlmey/lammps-gui/releases/download/v3.0.7/LAMMPS-GUI-Win10-x86_64-v3.0.7.exe)
   for Windows
