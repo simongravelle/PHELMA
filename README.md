@@ -89,3 +89,21 @@ run             1000 # System equilibration
 # fix             myav1 all ave/time 100 1 100 v_strain v_stress file stress_strain.dat # Write stress-strain to file
 
 ```
+
+## Extra commands
+
+Measure radial distribution function (g(r))
+
+```
+compute         myRDF    all      rdf 50
+fix             1        all      ave/time 200 10 2000 c_myRDF[*] file rdf.dat mode vector
+```
+
+Measure mean square displacement
+
+```
+compute         mymsd        all      msd
+fix             myat1        all      ave/time 10 100 1000 c_mymsd[4] file msd.dat
+```
+
+
