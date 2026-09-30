@@ -86,6 +86,6 @@ run             1000 # System equilibration
 
 # variable        stress equal -pxy
 # variable        strain equal xy/ly
-# fix             myav1 all ave/time 100 1 100 v_strain v_stress file stress_strain_0.05.dat
+# fix             myav1 all ave/time 100 1 100 v_strain v_stress file stress_strain.dat # Write stress-strain to file
 
 ```
